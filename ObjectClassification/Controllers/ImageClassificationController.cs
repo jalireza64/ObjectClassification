@@ -103,6 +103,8 @@ namespace ObjectClassification.Controllers
             var newData = MaskClassificationImageModel.LoadImageFromFolder(mlContext, ImagesRoot);
             try
             {
+                //var test = MaskClassificationImageModel.BuildPipeline(mlContext).Fit(newData);
+                //var test2 = test.Preview(newData);
                 MaskClassificationImageModel.RetrainModel(mlContext, newData);
             }
             catch (Exception ex)
