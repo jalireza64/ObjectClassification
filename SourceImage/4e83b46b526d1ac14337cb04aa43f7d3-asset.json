@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpeg",
+        "id": "4e83b46b526d1ac14337cb04aa43f7d3",
+        "name": "2.jpeg",
+        "path": "file:D:/MyProject/ObjectClassification/SourceImage/2.jpeg",
+        "size": {
+            "width": 231,
+            "height": 116
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "jLSJENHbd",
+            "type": "RECTANGLE",
+            "tags": [
+                "Cat"
+            ],
+            "boundingBox": {
+                "height": 113.24271262002743,
+                "width": 99.65954514128188,
+                "left": 64.9538249483115,
+                "top": 2.7572873799725652
+            },
+            "points": [
+                {
+                    "x": 64.9538249483115,
+                    "y": 2.7572873799725652
+                },
+                {
+                    "x": 164.6133700895934,
+                    "y": 2.7572873799725652
+                },
+                {
+                    "x": 164.6133700895934,
+                    "y": 116
+                },
+                {
+                    "x": 64.9538249483115,
+                    "y": 116
+                }
+            ]
+        }
+    ],
+    "version": "2.2.0"
+}

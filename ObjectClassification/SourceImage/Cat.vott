@@ -1,0 +1,169 @@
+{
+    "name": "Cat",
+    "securityToken": "Cat Token",
+    "sourceConnection": {
+        "name": "Cat",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiY2Y2YjcwMzM4MzJlNTkyNDM5MTdlYjYyYmRhNTk3MzE2NjdlZmIyYjE1NmVlNDQ5NThiNzBiZDY3NDZmMGU5OGJlMjI5MDA4MzFmZmExODdjNjY0ZjA0NjU1NmY0ZGYyNzVlNTRiMTkzNmJkYWJjYWVlODBiMmY3YjdiMWUyZGJlZTY0ODZmOGRkMTQyYWJlNjVkZDU3NWZkMWI4OGVkM2FiZGU1NTgwMjQ4YzVjY2YwMWI0MzU3ZDJkNmMyMzZjIiwiaXYiOiI5MTUwMGY1MTVlZDFiZDc4M2EwOWFmMTU2NDBhOTYxYmM4NWJiZTg4Yzg5NDAxZTIifQ=="
+        },
+        "id": "GZVx3acXl"
+    },
+    "targetConnection": {
+        "name": "Cat",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOGJjZjNmNWVkNDIxYTcyODlmMmYwMmQ0NTYzMmRiYmUzNDZlNTM0MDk0ZTI4Njg0MmQ4YWQyNGJiNjBiYzEyZDk0NTRkNWZjY2M3ZTRlNTg1NDFjN2I1NTBjMTAyMGJkOWIyYTk5NTUwNGQyZjBmYzc2MjZmZGRkNmFjYWI1Mjk1ZGYwNDMxNGI2NTM2NTVjZjVmZmE4MDg1MWQwOGU2YmFiNDhmM2ZlN2VlZjc4Mzg2ZDNhMTlmOTE2MDJmOTE3IiwiaXYiOiIzOWExODhmYTYxZmUxZjI3OTcwNDQ0MWU1ZDdlNzRhOTYwYTRiZTI1MzNhNDEyZDMifQ=="
+        },
+        "id": "GZVx3acXl"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "Cat",
+            "color": "#5db300"
+        },
+        {
+            "name": "Dog",
+            "color": "#6917aa"
+        }
+    ],
+    "id": "tOI3pf1qJ",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDMwNzQwYWEyNDY2N2Q4NzE1NDhmMTFlMTg0MTBkMDg5NDdkMDExM2MxZjc2MzFlMTRmMWZjNmNiMjQ3MTJiYjUzNGQzOWJkOThiYTFiMjZmNzYxNWUxNGFmNmY0ZDZmIiwiaXYiOiI1ZGQ2NWZkYjU5ZDg5YjZhNTYwNzY2ZjQ0MjhkMDUyMTM2NTU1ZjRlYmU0N2UwNjUifQ=="
+        }
+    },
+    "version": "2.2.0",
+    "lastVisitedAssetId": "ca6975f32afa20bc5ad8115f5f3d5ad4",
+    "assets": {
+        "ca6975f32afa20bc5ad8115f5f3d5ad4": {
+            "format": "jpg",
+            "id": "ca6975f32afa20bc5ad8115f5f3d5ad4",
+            "name": "1.jpg",
+            "path": "file:D:/MyProject/ObjectClassification/ObjectClassification/SourceImage/1.jpg",
+            "size": {
+                "width": 193,
+                "height": 129
+            },
+            "state": 1,
+            "type": 1
+        },
+        "d7dece8d8ec67f30a8e04b6efdbbfa1b": {
+            "format": "jpg",
+            "id": "d7dece8d8ec67f30a8e04b6efdbbfa1b",
+            "name": "2.jpg",
+            "path": "file:D:/MyProject/ObjectClassification/ObjectClassification/SourceImage/2.jpg",
+            "size": {
+                "width": 231,
+                "height": 116
+            },
+            "state": 1,
+            "type": 1
+        },
+        "f7ebe260ae42b0993f616f3ac066d226": {
+            "format": "jpg",
+            "id": "f7ebe260ae42b0993f616f3ac066d226",
+            "name": "d56c8a78d352ed6a1ea2d506e200e130.jpg",
+            "path": "file:D:/MyProject/ObjectClassification/ObjectClassification/SourceImage/d56c8a78d352ed6a1ea2d506e200e130.jpg",
+            "size": {
+                "width": 639,
+                "height": 360
+            },
+            "state": 1,
+            "type": 1
+        },
+        "6ba07cc537503c8bc4349aa198ae217a": {
+            "format": "jpg",
+            "id": "6ba07cc537503c8bc4349aa198ae217a",
+            "name": "download%20(1).jpg",
+            "path": "file:D:/MyProject/ObjectClassification/ObjectClassification/SourceImage/download%20(1).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 1,
+            "type": 1
+        },
+        "9e63aa4ccf89a307980f7fe3387138de": {
+            "format": "jpg",
+            "id": "9e63aa4ccf89a307980f7fe3387138de",
+            "name": "download%20(2).jpg",
+            "path": "file:D:/MyProject/ObjectClassification/ObjectClassification/SourceImage/download%20(2).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 1,
+            "type": 1
+        },
+        "3bee7cbed75c1f043eb2d50437ffd08c": {
+            "format": "jpg",
+            "id": "3bee7cbed75c1f043eb2d50437ffd08c",
+            "name": "download%20(3).jpg",
+            "path": "file:D:/MyProject/ObjectClassification/ObjectClassification/SourceImage/download%20(3).jpg",
+            "size": {
+                "width": 265,
+                "height": 190
+            },
+            "state": 2,
+            "type": 1
+        },
+        "09a9952f828119f82996c4183d8b1d04": {
+            "format": "jpg",
+            "id": "09a9952f828119f82996c4183d8b1d04",
+            "name": "download%20(4).jpg",
+            "path": "file:D:/MyProject/ObjectClassification/ObjectClassification/SourceImage/download%20(4).jpg",
+            "size": {
+                "width": 259,
+                "height": 195
+            },
+            "state": 2,
+            "type": 1
+        },
+        "801c04e1264529691bde0a72c3ef18c1": {
+            "format": "jpg",
+            "id": "801c04e1264529691bde0a72c3ef18c1",
+            "name": "download%20(5).jpg",
+            "path": "file:D:/MyProject/ObjectClassification/ObjectClassification/SourceImage/download%20(5).jpg",
+            "size": {
+                "width": 330,
+                "height": 153
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ad34b3117b8273e992f1ec8eaafabc3f": {
+            "format": "jpg",
+            "id": "ad34b3117b8273e992f1ec8eaafabc3f",
+            "name": "download.jpg",
+            "path": "file:D:/MyProject/ObjectClassification/ObjectClassification/SourceImage/download.jpg",
+            "size": {
+                "width": 287,
+                "height": 175
+            },
+            "state": 1,
+            "type": 1
+        },
+        "e9affcaed8bf2e37d985c14dc82c29fe": {
+            "format": "jpeg",
+            "id": "e9affcaed8bf2e37d985c14dc82c29fe",
+            "name": "d56c8a78d352ed6a1ea2d506e200e130.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/ObjectClassification/SourceImage/d56c8a78d352ed6a1ea2d506e200e130.jpeg",
+            "size": {
+                "width": 639,
+                "height": 360
+            },
+            "state": 1,
+            "type": 1
+        }
+    }
+}

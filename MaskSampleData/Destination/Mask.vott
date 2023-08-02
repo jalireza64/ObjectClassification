@@ -1,0 +1,304 @@
+{
+    "name": "Mask",
+    "securityToken": "Mask Token",
+    "sourceConnection": {
+        "name": "Source",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYTM3YmZmNmYxMTNiMDM2MzU1MDI1ZTc4M2ZjOTMyMDAwYTQ1NmQ2YWRjMzRjN2NkYTVkM2JmNjcwM2Y4MjdiNzYzOTdhZWI0YzhjYjZmNjU2YTAzMWIzYzkyOWU0Mzg3NDljOGNjYzhkMDg0ZTViNmZmNDZlN2YwM2U3MjJjMDYzOWQyY2E4ZDMwN2RjMzU3Y2VjMzhjOWQwMDExZWQzNiIsIml2IjoiYTNlOWVmYjg5MWE0NGQyYzUyNzcwYjFjYjRiNjFiZGQ5ZmMzNGQxY2JmYjAzYTY1In0="
+        },
+        "id": "HavSzplCm"
+    },
+    "targetConnection": {
+        "name": "Destination",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMzRmMGRkZjE3N2U5MzJmNjJjODE1OTRjYmQ5YjA2NGViMDY4MTdlZTc5MjU3ZDYwNzNmNGQxNjAxMWM5ODEzNzNmMmIxOTI4NDZiYTAwY2NhMTEwODkzNGZkYTM0ZjU3Mzg4ZTc1NDBmMTRlMWMwZjcxZjc2YTUzMTI1ZDc0NDcyODEzMDc2N2MwMzU4ODE5Zjg2NDAzNGRlYzQyMGFhNzNhMmQ3MjJiNmZhZDM4OWYyZWVlYTBhNjgwYTIyZWViIiwiaXYiOiI5MGVkMzRlZGJhNmEzOGFhOWMyNzFiMWE0NjBkOGJkNzQ0MGUxZjdmZDAxZDAwNmMifQ=="
+        },
+        "id": "TiAcKIcas"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "WithMask",
+            "color": "#808000"
+        },
+        {
+            "name": "WithoutMask",
+            "color": "#00FF00"
+        }
+    ],
+    "id": "Yvkga0wNC",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNjcyYzMxYjliNjJlM2NjOGYwYzY2NzNhZWJhYTYwNThhZmQ2YzI4ZDUxNzVkYjk5MzljYWEwY2VlZDI1YWVkMTAzZjhiM2QzYzU1Y2E3MWU0YTY5OGFjZjYyZjIzNzc2IiwiaXYiOiJhOTBiN2I1Zjk2NWU4Yjk3YjhkNmEyZTc2NWJiNTgzZGQyZTExMTM5NGYxOTRkNWUifQ=="
+        }
+    },
+    "version": "2.2.0",
+    "lastVisitedAssetId": "86ad59bc2729f53b462e2629c9cfecc0",
+    "assets": {
+        "c0ac4040b4f0a4b17653a17092de6ef5": {
+            "format": "jpeg",
+            "id": "c0ac4040b4f0a4b17653a17092de6ef5",
+            "name": "1.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/1.jpeg",
+            "size": {
+                "width": 1200,
+                "height": 627
+            },
+            "state": 2,
+            "type": 1,
+            "predicted": true
+        },
+        "6d9250ab14dad73b0b8c8af0914ece0a": {
+            "format": "jpeg",
+            "id": "6d9250ab14dad73b0b8c8af0914ece0a",
+            "name": "10.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/10.jpeg",
+            "size": {
+                "width": 3968,
+                "height": 2646
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e4d9ca09583a7e3943c60466ea36d870": {
+            "format": "jpeg",
+            "id": "e4d9ca09583a7e3943c60466ea36d870",
+            "name": "11.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/11.jpeg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fcdb1854ec6900e23d136e80dfb42996": {
+            "format": "jpeg",
+            "id": "fcdb1854ec6900e23d136e80dfb42996",
+            "name": "2.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/2.jpeg",
+            "size": {
+                "width": 232,
+                "height": 217
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9e6ad504f8b9a63b5b08f7065db6d54a": {
+            "format": "jpeg",
+            "id": "9e6ad504f8b9a63b5b08f7065db6d54a",
+            "name": "20.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/20.jpeg",
+            "size": {
+                "width": 992,
+                "height": 744
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c204f94c32275fc9dd1e1e446afd2acb": {
+            "format": "jpeg",
+            "id": "c204f94c32275fc9dd1e1e446afd2acb",
+            "name": "21.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/21.jpeg",
+            "size": {
+                "width": 255,
+                "height": 198
+            },
+            "state": 2,
+            "type": 1
+        },
+        "75148d127911f0d6ad5cc2d56c3f5c4f": {
+            "format": "jpeg",
+            "id": "75148d127911f0d6ad5cc2d56c3f5c4f",
+            "name": "22.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/22.jpeg",
+            "size": {
+                "width": 183,
+                "height": 275
+            },
+            "state": 2,
+            "type": 1,
+            "predicted": true
+        },
+        "c9bc87e5aec7683aa4d5fc190687e765": {
+            "format": "jpeg",
+            "id": "c9bc87e5aec7683aa4d5fc190687e765",
+            "name": "23.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/23.jpeg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1,
+            "predicted": true
+        },
+        "3bf2260409f599fb1d5d38a53fa49037": {
+            "format": "jpeg",
+            "id": "3bf2260409f599fb1d5d38a53fa49037",
+            "name": "24.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/24.jpeg",
+            "size": {
+                "width": 191,
+                "height": 264
+            },
+            "state": 2,
+            "type": 1
+        },
+        "011f6403867b421baea306dc72f268c0": {
+            "format": "jpeg",
+            "id": "011f6403867b421baea306dc72f268c0",
+            "name": "26.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/26.jpeg",
+            "size": {
+                "width": 183,
+                "height": 275
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bc624a61c2d55832bfb25b055df36f4c": {
+            "format": "jpeg",
+            "id": "bc624a61c2d55832bfb25b055df36f4c",
+            "name": "27.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/27.jpeg",
+            "size": {
+                "width": 198,
+                "height": 255
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9e7395f86bf1a3c38615cd916beea75d": {
+            "format": "jpeg",
+            "id": "9e7395f86bf1a3c38615cd916beea75d",
+            "name": "28.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/28.jpeg",
+            "size": {
+                "width": 1600,
+                "height": 1200
+            },
+            "state": 2,
+            "type": 1
+        },
+        "eef213e9ba6ec657dd6d3943a8e18dbd": {
+            "format": "jpeg",
+            "id": "eef213e9ba6ec657dd6d3943a8e18dbd",
+            "name": "3.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/3.jpeg",
+            "size": {
+                "width": 1118,
+                "height": 836
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1d90b71d7562ea2fb959e2de26636008": {
+            "format": "jpeg",
+            "id": "1d90b71d7562ea2fb959e2de26636008",
+            "name": "30.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/30.jpeg",
+            "size": {
+                "width": 274,
+                "height": 184
+            },
+            "state": 2,
+            "type": 1
+        },
+        "efa7aafa20c0ce35f6e85ec9c802a1bc": {
+            "format": "jpeg",
+            "id": "efa7aafa20c0ce35f6e85ec9c802a1bc",
+            "name": "31.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/31.jpeg",
+            "size": {
+                "width": 301,
+                "height": 167
+            },
+            "state": 2,
+            "type": 1
+        },
+        "434f80b867c6c772ebc73b988167649f": {
+            "format": "jpeg",
+            "id": "434f80b867c6c772ebc73b988167649f",
+            "name": "4.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/4.jpeg",
+            "size": {
+                "width": 292,
+                "height": 172
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c27db4f39f32f71ade96d1608c05062b": {
+            "format": "jpeg",
+            "id": "c27db4f39f32f71ade96d1608c05062b",
+            "name": "5.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/5.jpeg",
+            "size": {
+                "width": 293,
+                "height": 172
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b1deda52229968e9d05268a93f640b19": {
+            "format": "jpeg",
+            "id": "b1deda52229968e9d05268a93f640b19",
+            "name": "6.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/6.jpeg",
+            "size": {
+                "width": 299,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b2b9e59379bebd99f04e683732207ba0": {
+            "format": "jpeg",
+            "id": "b2b9e59379bebd99f04e683732207ba0",
+            "name": "7.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/7.jpeg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7ef3c52885cb5d5ec78996a7983646a8": {
+            "format": "jpeg",
+            "id": "7ef3c52885cb5d5ec78996a7983646a8",
+            "name": "8.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/8.jpeg",
+            "size": {
+                "width": 259,
+                "height": 194
+            },
+            "state": 2,
+            "type": 1
+        },
+        "86ad59bc2729f53b462e2629c9cfecc0": {
+            "format": "jpeg",
+            "id": "86ad59bc2729f53b462e2629c9cfecc0",
+            "name": "9.jpeg",
+            "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/9.jpeg",
+            "size": {
+                "width": 296,
+                "height": 170
+            },
+            "state": 2,
+            "type": 1
+        }
+    }
+}

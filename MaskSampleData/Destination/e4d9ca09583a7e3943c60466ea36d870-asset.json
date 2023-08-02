@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpeg",
+        "id": "e4d9ca09583a7e3943c60466ea36d870",
+        "name": "11.jpeg",
+        "path": "file:D:/MyProject/ObjectClassification/MaskSampleData/Source/11.jpeg",
+        "size": {
+            "width": 275,
+            "height": 183
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "4NC0LbBk_",
+            "type": "RECTANGLE",
+            "tags": [
+                "WithMask"
+            ],
+            "boundingBox": {
+                "height": 165.17532467532467,
+                "width": 155.21958243340532,
+                "left": 61.9226399388049,
+                "top": 17.824675324675326
+            },
+            "points": [
+                {
+                    "x": 61.9226399388049,
+                    "y": 17.824675324675326
+                },
+                {
+                    "x": 217.14222237221023,
+                    "y": 17.824675324675326
+                },
+                {
+                    "x": 217.14222237221023,
+                    "y": 183
+                },
+                {
+                    "x": 61.9226399388049,
+                    "y": 183
+                }
+            ]
+        }
+    ],
+    "version": "2.2.0"
+}
