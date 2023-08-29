@@ -10,9 +10,9 @@
     <PackageReference Include="Microsoft.ML.TorchSharp" Version="0.21.0-preview.23266.6" />
     <PackageReference Include="Microsoft.ML.Vision" Version="3.0.0-preview.23266.6" />
     <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.3.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
-    <PackageReference Include="TorchSharp-cpu" Version="0.99.5" />
+    <PackageReference Include="TorchSharp-cpu" Version="0.100.4" />
   </ItemGroup>
   <ItemGroup Label="MaskClassificationImageModel">
     <None Include="MaskClassificationImageModel.mlnet">
