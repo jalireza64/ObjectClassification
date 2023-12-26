@@ -17,8 +17,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "ImageClassificationMulti",
-        "Score": 0.0059412430909558268,
-        "RuntimeInSeconds": 20.016,
+        "Score": 1.0,
+        "RuntimeInSeconds": 20.3,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2",
           "e0": {
@@ -47,7 +47,7 @@
       "e2": "MapKeyToValue"
     },
     "Schema": "e0 * e1 * e2",
-    "MetricName": "LogLoss",
+    "MetricName": "MicroAccuracy",
     "ModelFilePath": "D:\\MyProject\\ObjectClassification\\ObjectClassification\\MaskClassificationImageModel.mlnet"
   },
   "Type": "TrainingConfig",
@@ -57,7 +57,7 @@
     "Subsampling": false,
     "Type": "ClassificationTrainingOption",
     "TrainingTime": 2147483647,
-    "OptimizeMetric": "LogLoss",
+    "OptimizeMetric": "MicroAccuracy",
     "ValidationOption": {
       "Version": 0,
       "Type": "TrainValidateSplitValidationOption",
