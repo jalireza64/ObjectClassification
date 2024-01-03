@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
@@ -6,6 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="3.0.0" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="3.0.0-preview.23266.6" />
     <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="3.0.0" />
     <PackageReference Include="Microsoft.ML.TorchSharp" Version="0.21.0" />
     <PackageReference Include="Microsoft.ML.Vision" Version="3.0.0" />
@@ -18,5 +19,13 @@
     <None Include="MaskClassificationImageModel.mlnet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup Label="SentenceClassificationModel">
+    <None Include="SentenceClassificationModel.mlnet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataModel\Sentence\" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,56 @@
+﻿{
+  "Scenario": "Classification",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "C:\\Users\\Alireza Jafari\\Desktop\\SentenceDataModel.txt",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": false,
+    "ColumnProperties": [
+      {
+        "ColumnName": "col0",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "col1",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "Type": "TrainingConfig",
+  "Version": 4,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Tuner": "eci-cfo",
+    "Type": "ClassificationTrainingOption",
+    "TrainingTime": 10,
+    "OptimizeMetric": "MacroAccuracy",
+    "LabelColumn": "col0",
+    "AvailableTrainers": [
+      "SDCA",
+      "LBFGS",
+      "LGBM",
+      "FASTTREE",
+      "FASTFOREST"
+    ],
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 10
+    }
+  }
+}
