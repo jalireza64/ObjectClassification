@@ -5,18 +5,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.ML.Data;
-using Microsoft.ML.Trainers.FastTree;
-using Microsoft.ML.Trainers;
 using Microsoft.ML;
+using Microsoft.ML.Data;
+using Microsoft.ML.Trainers;
+using Microsoft.ML.Trainers.FastTree;
 
 namespace ObjectClassification
 {
     public partial class SentenceClassificationModel
     {
-        public const string RetrainFilePath =  @"C:\Users\Alireza Jafari\Desktop\SentenceDataModel.txt";
+        public const string RetrainFilePath =  @"D:\MyProject\ObjectClassification\ObjectClassification\DataModel\Sentence\SentenceData.txt";
         public const char RetrainSeparatorChar = ',';
         public const bool RetrainHasHeader =  false;
+        public const bool RetrainAllowQuoting =  true;
 
          /// <summary>
         /// Train a new model with the provided dataset.
@@ -25,11 +26,11 @@ namespace ObjectClassification
         /// <param name="inputDataFilePath">Path to the data file for training.</param>
         /// <param name="separatorChar">Separator character for delimited training file.</param>
         /// <param name="hasHeader">Boolean if training file has a header.</param>
-        public static void Train(string outputModelPath, string inputDataFilePath = RetrainFilePath, char separatorChar = RetrainSeparatorChar, bool hasHeader = RetrainHasHeader)
+        public static void Train(string outputModelPath, string inputDataFilePath = RetrainFilePath, char separatorChar = RetrainSeparatorChar, bool hasHeader = RetrainHasHeader, bool allowQuoting = RetrainAllowQuoting)
         {
             var mlContext = new MLContext();
 
-            var data = LoadIDataViewFromFile(mlContext, inputDataFilePath, separatorChar, hasHeader);
+            var data = LoadIDataViewFromFile(mlContext, inputDataFilePath, separatorChar, hasHeader, allowQuoting);
             var model = RetrainModel(mlContext, data);
             SaveModel(mlContext, model, data, outputModelPath);
         }
@@ -42,9 +43,9 @@ namespace ObjectClassification
         /// <param name="separatorChar">Separator character for delimited training file.</param>
         /// <param name="hasHeader">Boolean if training file has a header.</param>
         /// <returns>IDataView with loaded training data.</returns>
-        public static IDataView LoadIDataViewFromFile(MLContext mlContext, string inputDataFilePath, char separatorChar, bool hasHeader)
+        public static IDataView LoadIDataViewFromFile(MLContext mlContext, string inputDataFilePath, char separatorChar, bool hasHeader, bool allowQuoting)
         {
-            return mlContext.Data.LoadFromTextFile<ModelInput>(inputDataFilePath, separatorChar, hasHeader);
+            return mlContext.Data.LoadFromTextFile<ModelInput>(inputDataFilePath, separatorChar, hasHeader, allowQuoting: allowQuoting);
         }
 
 
@@ -92,7 +93,7 @@ namespace ObjectClassification
             var pipeline = mlContext.Transforms.Text.FeaturizeText(inputColumnName:@"col0",outputColumnName:@"col0")      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"col0"}))      
                                     .Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName:@"col1",inputColumnName:@"col1",addKeyValueAnnotationsAsText:false))      
-                                    .Append(mlContext.MulticlassClassification.Trainers.OneVersusAll(binaryEstimator:mlContext.BinaryClassification.Trainers.FastTree(new FastTreeBinaryTrainer.Options(){NumberOfLeaves=6,MinimumExampleCountPerLeaf=12,NumberOfTrees=1121,MaximumBinCountPerFeature=17,FeatureFraction=0.895309794300701,LearningRate=0.108781870263772,LabelColumnName=@"col1",FeatureColumnName=@"Features",DiskTranspose=false}),labelColumnName: @"col1"))      
+                                    .Append(mlContext.MulticlassClassification.Trainers.OneVersusAll(binaryEstimator:mlContext.BinaryClassification.Trainers.FastTree(new FastTreeBinaryTrainer.Options(){NumberOfLeaves=8,MinimumExampleCountPerLeaf=11,NumberOfTrees=4,MaximumBinCountPerFeature=256,FeatureFraction=0.9042314525453776,LearningRate=0.006785815321618472,LabelColumnName=@"col1",FeatureColumnName=@"Features",DiskTranspose=false}),labelColumnName: @"col1"))      
                                     .Append(mlContext.Transforms.Conversion.MapKeyToValue(outputColumnName:@"PredictedLabel",inputColumnName:@"PredictedLabel"));
 
             return pipeline;

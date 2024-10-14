@@ -3,7 +3,7 @@
   "DataSource": {
     "Type": "Folder",
     "Version": 1,
-    "FolderPath": "D:\\MyProject\\ObjectClassification\\ObjectClassification\\Images\\MaskDetectionSampleImages"
+    "FolderPath": "D:\\MyProject\\ObjectClassification\\MaskSampleImage"
   },
   "Environment": {
     "Type": "LocalCPU",
@@ -17,8 +17,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "ImageClassificationMulti",
-        "Score": 1.0,
-        "RuntimeInSeconds": 20.3,
+        "Score": 0.0,
+        "RuntimeInSeconds": 11.357,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2",
           "e0": {
@@ -51,13 +51,12 @@
     "ModelFilePath": "D:\\MyProject\\ObjectClassification\\ObjectClassification\\MaskClassificationImageModel.mlnet"
   },
   "Type": "TrainingConfig",
-  "Version": 4,
+  "Version": 5,
   "TrainingOption": {
     "Version": 2,
     "Subsampling": false,
     "Type": "ClassificationTrainingOption",
     "TrainingTime": 2147483647,
-    "OptimizeMetric": "MicroAccuracy",
     "ValidationOption": {
       "Version": 0,
       "Type": "TrainValidateSplitValidationOption",

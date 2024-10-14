@@ -51,7 +51,7 @@ namespace ObjectClassification.Controllers
             System.IO.File.AppendAllText(dataModelRoot, insertedSample + "\r\n");
 
             MLContext mlContext = new MLContext();
-            var newData = SentenceClassificationModel.LoadIDataViewFromFile(mlContext, dataModelRoot, ',', false);
+            var newData = SentenceClassificationModel.LoadIDataViewFromFile(mlContext, dataModelRoot, ',', false, false);
             try
             {
                 SentenceClassificationModel.RetrainModel(mlContext, newData);
