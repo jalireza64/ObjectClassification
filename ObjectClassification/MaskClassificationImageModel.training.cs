@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.ML;
 using Microsoft.ML.Data;
 using Microsoft.ML.Vision;
-using Microsoft.ML;
 
 namespace ObjectClassification
 {
